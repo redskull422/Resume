@@ -1,0 +1,72 @@
+@keyframes box{
+    50%{box-shadow : 4px 4px 4px purple;}
+    100%{box-shadow :none}
+    
+}
+@keyframes fadeIn { from { opacity:0;background-color:black } to { opacity:1;background-color:purple; } }
+.fade-in{
+    animation:fadeIn ease-in-out 1;
+    animation-fill-mode:backwards;
+    animation-duration:3.5s;
+}
+.fade-in.one{
+    animation-delay: 0.5s;
+}
+.animation-box{
+    animation-name: box;
+    animation-duration:2500ms;
+    animation-iteration-count: infinite;
+}
+#expertbox:hover{
+    width: 220px;
+    height: 220px;
+    transform:rotate(360deg);
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+#contactbox:hover{
+    width:220px;
+    height:220px;
+    transform:rotate(360deg);
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+#box3:hover{
+    width:220px;
+    height:220px;
+    transform:rotate(360deg);
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+p:hover{
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    color:cornflowerblue;
+}
+ul:hover{
+    transition: width 2s, height 2s, background-color 2s, transform 2s;
+    color:cornflowerblue;
+}
+.hero-image {
+    filter: brightness(70%);
+    height: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+  #contactbttn:hover{
+      background-color:blueviolet;
+      color:black;
+  }
+  tr{
+      border : 2px solid blueviolet;
+      border-radius : 15%;
+  }
+  td{
+      padding : 2px;
+  }
